@@ -16,8 +16,8 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
+          <tr *ngFor="let items of products, let i= index">
+            <td>{{i+1}}</td>
             <td>Iphone</td>
             <td>image</td>
             <td>is is a brand phone</td>
