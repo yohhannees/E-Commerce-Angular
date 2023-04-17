@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
 import { CartComponent } from './component/cart/cart.component';
@@ -15,14 +15,14 @@ import { FilterPipe } from './shared/filter.pipe';
     HeaderComponent,
     CartComponent,
     ProductsComponent,
-    FilterPipe
+    FilterPipe,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+     FormsModule,
+      AppRoutingModule,
+       HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

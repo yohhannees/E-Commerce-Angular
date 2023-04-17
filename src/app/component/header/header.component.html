@@ -4,7 +4,7 @@
       <i style="font-size: 30px" class="fas fa-shipping-fast"> </i>
       <strong> flip cart</strong>
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search products">
+        <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
       </div>
       <span class="fas fa-search search-icon"></span>
     </div>
