@@ -1,11 +1,5 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-@Injectable({
-  providedIn: 'root'
-})
-
-/////////////////////////////////////////////////
-
 
 
 @Injectable({
@@ -44,8 +38,8 @@ export class CartService {
         this.cartItemList.splice(index, 1);
       }
     });
-    /////
-    this.productList.next(this.cartItemList);
+   
+    // this.productList.next(this.cartItemList);
   }
   removeAllCart() {
     this.cartItemList = [];
