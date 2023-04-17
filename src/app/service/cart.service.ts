@@ -39,7 +39,7 @@ export class CartService {
       }
     });
    
-    // this.productList.next(this.cartItemList);
+     this.productList.next(this.cartItemList);
   }
   removeAllCart() {
     this.cartItemList = [];

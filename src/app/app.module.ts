@@ -7,13 +7,15 @@ import { CartComponent } from './component/cart/cart.component';
 import { ProductsComponent } from './component/products/products.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FilterPipe } from './shared/filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CartComponent,
-    ProductsComponent
+    ProductsComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
