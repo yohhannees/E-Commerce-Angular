@@ -1,13 +1,19 @@
+
 .form-control {
-    border-radius: 3px;
-    width: 600px;
-    margin-left: 20px;
+  border-radius: 3px;
+  width: 600px;
+  margin-left: 20px;
 }
 
 .search-icon {
   position: absolute;
-    z-index: 10;
-    right: 650px;
-    top: 23px;
-    color: blue;
+  z-index: 10;
+  right: 655px;
+  top: 23px;
+  color: rgb(2, 32, 201);
+}
+
+.cart-icon {
+  font-size: 24px;
+  margin-right: 10px;
 }

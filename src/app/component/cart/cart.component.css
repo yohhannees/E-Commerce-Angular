@@ -46,3 +46,35 @@ h6 {
     padding: 12px 72px;
     border-radius: 3px !important;
 }
+
+
+
+
+
+
+.cart-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.cart-description {
+  width: 25%;
+}
+
+.cart-price, .cart-quantity, .cart-total {
+  width: 12%;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.center img {
+  width: 300px;
+  margin-bottom: 20px;
+}

@@ -1,4 +1,4 @@
-<header>
+<!-- <header>
   <div class="navbar navbar-dark bg-primary shadow-sm">
     <div class="navbar-brand align-item-center d-flex">
       <i style="font-size: 30px" class="fas fa-shop"> </i>
@@ -14,4 +14,20 @@
         </button>
   </div>
 </header>
- 
+  -->
+  <header>
+  <div class="navbar navbar-dark bg-primary shadow-sm">
+    <div class="navbar-brand align-items-center d-flex">
+      <i class="fas fa-shop"></i>
+      <strong>E-Shop</strong>
+      <div class="search-form">
+        <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="Search products">
+        <span class="search-icon fas fa-search"></span>
+      </div>
+    </div>
+    <button routerLink="cart" class="btn btn-primary cart-button">
+      <i class="fas fa-cart-plus"></i>
+      <div class="badge bg-danger">{{totalItem}}</div>
+    </button>
+  </div>
+</header>

@@ -1,4 +1,4 @@
-.card-top {
+ .card-top {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -21,10 +21,12 @@
 
 .item a:hover {
     color: blue;
+   
 }
 .card {
     padding: 20px;
     margin: 45px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
  .card img {
@@ -38,3 +40,61 @@
     transition: 0.3s ease-in-out;
     transform: scale(1.1);
 } 
+
+.card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+
+.card p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+
+
+.item {
+  margin: 10px;
+  text-align: center;
+}
+
+.item a:hover {
+  color: blue;
+}
+
+
+
+
+.card:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+
+
+.card button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card button:hover {
+  background-color: #0062cc;
+}
