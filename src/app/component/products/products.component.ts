@@ -9,8 +9,8 @@ import { CartService } from 'src/app/service/cart.service';
 })
 export class ProductsComponent implements OnInit {
   public productList: any;
+  public filterCategory: any;
   searchkey: string = '';
-  public filterCategory :any;
   constructor(private api: ApiService, private cartService: CartService) {}
 
   ngOnInit(): void {
@@ -43,4 +43,12 @@ export class ProductsComponent implements OnInit {
       }
     });
   }
+  // filter(category: string) {
+  //   this.filterCategory = this.productList.filter((a: any) => {
+  //     if (a.category === category || category === '') {
+  //       return true;
+  //     }
+  //     return false;
+  //   });
+  // }
 }
