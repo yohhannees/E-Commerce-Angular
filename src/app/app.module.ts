@@ -8,6 +8,7 @@ import { ProductsComponent } from './component/products/products.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FilterPipe } from './shared/filter.pipe';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -19,9 +20,11 @@ import { FilterPipe } from './shared/filter.pipe';
   ],
   imports: [
     BrowserModule,
-     FormsModule,
-      AppRoutingModule,
-       HttpClientModule],
+    FormsModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
