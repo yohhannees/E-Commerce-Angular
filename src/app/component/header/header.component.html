@@ -8,7 +8,19 @@
         <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="Search products">
         <span class="search-icon fas fa-search"></span>
       </div>
+      
     </div>
+    <div>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-user"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <div routerLink="login" class="auth"  class="dropdown-item" >Login</div>
+            <div  routerLink="register" class="auth"  class="dropdown-item"  >Register</div> 
+          </ul>
+        </div>
+      </div>
     <button routerLink="cart" class="btn btn-primary cart-button">
       <i class="fas fa-cart-plus"></i>
       <div class="badge bg-danger">{{totalItem}}</div>
